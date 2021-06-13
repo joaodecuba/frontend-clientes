@@ -71,7 +71,7 @@ class DeletarCliente extends Component {
     handleClick = event => {
         const { id } = this.props.match.params;
  
-        fetch(`http://localhost:3003/sistema/clientes/${id}`, {
+        fetch(`https://backend-cliente-jpl.herokuapp.com/clientes/${id}`, {
             method: "delete"
         })
             .then(data => {
